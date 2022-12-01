@@ -1,0 +1,55 @@
+
+@import "utilidades/mixin";
+
+main{
+    
+    .subtitulo{
+        text-align: center;
+        color: rebeccapurple;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content: center;
+     }
+
+    .mardelplata{
+        display: grid nowrap;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "map img"
+        "map-dos img-dos";
+        justify-content: center;
+        
+        .trenrosa{
+            width: 24rem;
+            grid-area: img;
+         }
+         
+    
+         
+        .deusvilla{
+            width: 24rem;
+            grid-area: img-dos;
+         }
+    
+    
+        .mapamdq{
+         width: 25rem;
+        grid-area: map;
+        }
+    
+        .mapavg{
+        width: 25rem;
+        grid-area: map-dos;
+        }
+     }
+    
+     .cumpleanitos{
+        width: 25rem;
+        
+     }
+    
+
+}
